@@ -1,0 +1,6 @@
+- SQL-
+ - To avoid division by zero error, nullif is used
+ - nullif(0,0) will return null avoiding the error
+ - nullif returns null if they are equal, returns first_expression if they are equal
+
+

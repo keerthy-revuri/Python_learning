@@ -1,0 +1,14 @@
+Data base overview -
+
+What are databases ?
+Data bases are systems that allows users to store and organize data
+They are useful while dealing with large amounts of data
+
+Data bases uses -
+- Data integrity - u can't click on data cell and edit the data like in spreadsheets
+- handles massive amount of data
+- Quickly combine different datasets
+- Automate steps for re-use
+- can support data for website and applications
+
+SQL is the programming language used to communicate with the database

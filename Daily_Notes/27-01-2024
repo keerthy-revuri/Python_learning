@@ -1,0 +1,21 @@
+SQL -
+----------
+- CROSS JOIN  - it requires no JOIN condition, it is cartesian product of 2 tables
+in this each row from table 1 is combined with each and every row from table 2
+
+- Integer can be converted to string  in sql by Casting it to VARCHAR
+ex - CAST('column' as VARCHAR)
+
+- 2 strings can be concatenated in sql by using CONCAT(col1 ,' ', col2)   (or)
+by using + in sql - 'col1' + ' '+ 'col2'    (or)
+by using || in postgresql - 'col1' || + ' ' + 'col2'
+
+- distinct is used while counting the no. of orders to eliminate duplicates
+
+---------------
+Python -
+---------------
+- char_cnt = default_dict(int)
+This will create a dictionary with default value as 0 for each key
+-
+

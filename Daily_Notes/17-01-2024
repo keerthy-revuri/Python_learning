@@ -1,0 +1,42 @@
+Python -
+-----
+1. Reverse the words in a given string -
+
+word = "i love to code"
+-first reverse the individual words in the string which will be - "i evol ot edoc",
+ then reverse the whole string - "code to love i"
+- string - convert to list using split- reverse words in list - join words in list to form string - reverse the string
+
+
+2. string.insert(0, word) - if we insert all words in a list at start position of a string,
+it will not override instead the words will move towards right i.e., first word insert will be the last word in the string
+and last word inserted will be the first word in string
+
+3. string.find(value, start, end) - finds first occurence of value between start to end indexes
+
+4. to reverse a string - there are 3 ways - using for loop, while loop, str[::-1]
+-for loop - for ch in range(len(word)-1,-1,-1)
+- while loop - find last index of the word(len_s =  len(s) - 1) and keep decrementing it until it reaches index 0
+(mention it in while loop - while len_s >= 0)
+
+5. Convert string to list without using split() by space
+
+- we use two pointers start, end
+- initialize start with 0, and empty word_list =[]
+- find end = string.find(' ', start)---------> #note - string.find(value,start,end) - this finds  the first occurence of value between      	start and end,
+ if value is not found this method returns -1
+- if end == -1, then move end to the end of string -- end = len(string)
+- append words to word_list --- word_list.append(str[start:end])
+- assign immediate next index of end to start to continue the loop--- start = end + 1, continue loop till start >= len(string)
+
+SQL -
+-----
+1. EXISTS - EXISTS operator checks for the existence of any rows returned from sub query,
+it returns true if it has any value , otherwise it returns false
+
+2. window functions - there are 3 types of functions - ranking, aggregate , value
+ these functions are performed on range of rows called windows , these windows are determined by over(partition by col order by col) clause
+ -over clause will have partition by col order by col which will determine the windows
+
+
+

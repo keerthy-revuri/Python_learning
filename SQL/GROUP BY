@@ -1,0 +1,18 @@
+- GROUP BY allows us to aggregate data and apply functions to better understand how data is distributed per category
+
+-- AGGREGATE FUNCTIONS -
+The main idea is it takes multiple inputs and return a single output
+- AVG(), MAX(), MIN(), SUM(), COUNT()
+- It can be used only in SELECT, HAVING clause
+- AVG() returns floating value, for precision ROUND() can be used
+
+--------------
+-- GROUP BY
+---------------
+- We need to choose a categorical column to GROUP BY
+- syntax - SELECT category_col, AGG(data_col) FROM table GROUP BY category_col
+- GROUP BY clause must appear right after FROM or WHERE
+- in SELECT statement columns must have either an aggregate function or be in GROUP BY call
+ex- SELECT data, division, SUM(sales) FROM customer GROUP BY data, division
+
+

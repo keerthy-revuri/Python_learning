@@ -1,0 +1,34 @@
+Python -
+----------
+
+1. Connect Strings ----
+-join is used to convert list to string - ''.join(list)
+- Instead of using join, for loop can be used to breakdown elements in list and those can be concatenated -
+
+2. String Palindrome -----
+- travese the string in reverse using range(len(str)-1,-1,-1)
+-concatenate all the characters to a empty string and compare both strings
+
+3. char count in string to dictionary -----
+PATTERN -----
+-string will be converted to dictionary in this
+-if a character is not  present in dictionary, give the value as 1 (temp[i] = 1)
+-else if a character is present in dictionary increment value by 1 (temp[i] = temp[i] +1)
+
+4. First repeated letter in string whose index of 2nd occurence of letter should be smallest.(geeksforgeeks ( ans - g))
+The above pattern is used in this------
+string will be converted to dictionary in this
+-if a character is not  present in dictionary, give the value as 1 (temp[i] = 1)
+-else if a character is present in dictionary increment value by 1 (temp[i] = temp[i] +1)
+- whose ever value of character increases first, the 2nd occurence of that is smallest
+
+5. First repeated letter present first in string - geeksforgeeks ( ans - g)
+- convert string to dictionary
+- After that, check whosever value in dictionary is > 1
+or
+
+- convert string to list
+- check if first item is present in rest of the items and return it
+    for i in range(len(a1)):
+        if a1[i] in a1[i+1:]:
+            return a1[i]

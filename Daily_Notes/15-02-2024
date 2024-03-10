@@ -1,0 +1,16 @@
+SQL -
+----------
+- We can create a back up table using existing table like below-
+ex -
+--------
+-Create temporary table person_bkp
+as
+select * from Person where 1 = 2
+
+- insertion to a table can be done using select query also
+ex-
+--------
+insert into person_bkp
+select * from Person
+
+-

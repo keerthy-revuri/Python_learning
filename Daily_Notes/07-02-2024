@@ -1,0 +1,12 @@
+Python -
+
+-if you think we will run beyond range based on problem statement, do some magic and recaluclate range
+which means analyse the pattern by giving various inputs
+ex - bubble sort, sum of consecutive k elements
+-  Assign cookies problem uses greedy algorithm
+- maximum product of two elements in an array - pattern - calculate max, second max elements and find product of them
+ if any numbers are -ve, sort and then find maximum product of first 2 and last 2 elements
+
+- A sliding window pattern helps us to reduce time complexity of brute force approaches
+-sum of consecutive k elements problem uses sliding window patter,
+other way is to find sum from window range i to i+k, traverse the array in range of n-k+1 ( can result to this when we check using inputs)

@@ -1,0 +1,33 @@
+Python -
+-A pattern is observed when while loop is used to traverse   instead of for loop
+ex - convert string to list without using split, so here we have to mention condition to check space
+start = 0
+str_res = ''
+word_list =[]
+while start < len(string):
+    if string[start] == ' ':
+        word_list.append(str_res)
+        str_res = ' '
+    else:
+        str_res = str_res + string[start]
+    start = start + 1
+- Unique email occurence problem follows same pattern - we have to traverse strings through special characters
+like [ @, +, . ] and store in empty strings - local, domain (slicing methos is used)and then join both to form final string
+
+- Merge Sort - Recursive function is used in this algorithm
+- array will be split till len(array) >1
+- merge_sort(L) is performed first then merge_sort(R) is performed
+-two pointers - i, j will be used to sort the sorted lists
+- array will be sorted at single element_level (as single elements are always sorted) then merged back
+-
+
+
+- SQL -
+------------------
+-When we want exact number of records same as 2 tables after Joining, they should be joined on multiple join conditions
+- syntax of BETWEEN function -
+BETWEEN 'value1' AND 'value2'
+
+- partition by, order by are not mandatory in windows functions, use them based on problem
+
+- sub query can be written anywhere in HAVING condition as well

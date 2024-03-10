@@ -1,0 +1,13 @@
+- Revision of Python algorithms
+
+- Majority element leetcode problem in python
+  - convert list to dictionary
+  - traverse through values in dictionary and check if value > n//2
+  - to get both key, value from dictionary, traverse through items
+     for key, value in dict.items():
+     or
+     for i in i_dict:
+    if i_dict[i] > n // 2:
+        print(i)
+  - then print or return that particular key
+

@@ -1,0 +1,18 @@
+SQL -
+
+- date_add(login_date, INTERVAL -rk DAY) as grp_date
+- this will add another date column grp_date , here grp_dat e= login_date- rk
+
+- the equivalent syntax of date_add in postgresql is - login_date - (rk || ' DAY')::INTERVAL AS grp_date
+
+- LEAD(col1) window functions is used to access data from subsequent rows, it fetches data from the specified
+number of rows ahead from the current row
+
+- datediff(date1, date2) - gives difference between dates
+
+- not equal to - != - <> are all same
+
+- INNER JOIN is same as SELF JOIN if it is same table
+
+- SELF JOIN can be written without using JOIN condition like this -
+Select * from emp e1, emp e2 where e1.id = e2.id

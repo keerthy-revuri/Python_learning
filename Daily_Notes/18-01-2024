@@ -1,0 +1,23 @@
+SQL -
+
+- Co-related sub query - For every outer record, the inner query executes against the whole table with the matching condition
+- Inner query is dependant on outer query
+- Both tables can be same or different
+
+- CASE WHEN -
+- CASE WHEN is same as if else
+- ex - case when student_number is not null then student_number else 0 end
+
+- Always try to use INNER JOIN , LEFT JOIN first as FULL OUTER JOIN is expensive
+
+-SELF JOIN - It is a regular JOIN , in this the table is joined with itself, It is used to compare the values
+of a column with the values of another column in the same table
+
+- CROSS JOIN - It is a JOIN operation that produces cartesian product of two tables
+- Each record in table 1 is joines with all records in table 2
+- No join condition is mentioned in this CROSS JOIN
+- ex- select * from table1 CROSS JOIN table2
+(or) - Select * from table1, table2
+(or) - Select * from table1 INNER JOIN table2 ON 1=1
+
+

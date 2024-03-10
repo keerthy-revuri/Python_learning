@@ -1,0 +1,23 @@
+SQL -
+-----------
+- CTE - Its is a kind of intermediate table created for more readability
+
+- If count is performed already and then if JOIN is applied , it returns null, if count is performed along
+  with JOIN operation then it returns 0
+
+
+- Both coalesce, case when can be used to get 0 in result when it is null
+- COALESCE(NULL,0) - it returns first non - null value
+- case when distance is not null then distance else 0 end
+
+- CROSS JOIN is used when question says result should have all values for particular columns
+
+Python -
+-----------
+-  XOR - returns 0 for same values, returns 1 for 2 different vales
+- number will convert into binary
+1^1 = 0
+1^0 = 1
+ex - 2^ 3 = 01 ^ 11 = 10 = 4
+
+

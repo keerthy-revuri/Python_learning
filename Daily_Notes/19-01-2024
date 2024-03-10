@@ -1,0 +1,5 @@
+SQL -
+---------------
+- Date column will have data type as date , value has to be in ' ' ex - '2024-01-19'
+
+-STRING AGG( ) - This function is used to group by date and separate other values by comma

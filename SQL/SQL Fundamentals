@@ -1,0 +1,44 @@
+- SELECT -
+In general it is not a good practice to use * in SELECT statement unless it is required
+because it will automatically query everything which will increase traffic between database server
+and application which will slow down retrieval of results
+
+- SELECT DISTINCT -
+DISTINCT keyword is used to return distinct values in a column.
+Using parenthesis for column name is optional here
+
+- SELECT COUNT(name) FROM table / SELECT COUNT(*) FROM table / SELECT COUNT(choice) FROM table-
+This returns no. of rows in a table
+it is same regardless of column
+
+- SELECT WHERE
+Syntax - SELECT col1, col2 FROM table WHERE CONDITION
+the conditions are used to filter the rows returned from select statement
+
+- Use single quotes around string
+
+- ORDER BY
+It is used to sort rows based on column value in either ascending or descending order
+ORDER BY is always at the end of the query as selection, filtering are done before sorting
+
+- LIMIT goes at the very end of a query request and it is the last command to be executed
+
+- BETWEEN
+syntax - value BETWEEN low AND high
+value NOT BETWEEN low AND high
+BETWEEN can be used for dates , but dates should be in ISO 8601 format - YYYY-MM-DD
+
+- IN
+We can use this operator to create a condition that checks to see if a value is included in a list of multiple options
+syntax - value in (option 1, option 2, option 3, ......)
+ex - SELECT * FROM customer WHERE first_name IN ('John, 'Jake', 'Alia')
+
+- LIKE
+It allows us to perform pattern matching against string data with use of wildcard characters
+Percent - % - matches any sequence of characters
+Underscore - _ - matches any single character ( allows us to replace only single character)
+LIKE - case sensitive
+ILIKE - case- insensitive
+
+
+

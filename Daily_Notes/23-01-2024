@@ -1,0 +1,44 @@
+SQL -
+
+- to get the percentage value , hard code one of the numerator or denominator with 1.0  (or) add 0.0 (or)
+  Cast numerator as float
+  ex - CAST(2 as float / 5) or (2 * 1.0)/5 or 2/(5 * 1.0)
+
+- Any number of window functions can be created in a query
+- The SQL CASE expression allows you to evaluate a list of conditions and returns one of the possible results.
+-The CASE expression has two formats: simple CASE and searched CASE
+
+-simple CASE -
+
+CASE expression
+WHEN when_expression_1 THEN
+	result_1
+WHEN when_expression_2 THEN
+	result_2
+WHEN when_expression_3 THEN
+	result_3
+...
+ELSE
+	else_result
+END
+
+- searched CASE -
+
+CASE
+WHEN boolean_expression_1 THEN
+	result_1
+WHEN boolean_expression_2 THEN
+	result_2
+WHEN boolean_expression_3 THEN
+	result_3
+ELSE
+	else_result
+END;
+
+- ENUM data type is a string object whose value is chosen from a list of permited values
+syntax -
+
+CREATE TABLE YourTable (
+    YourColumn ENUM('Value1', 'Value2', 'Value3')
+);
+

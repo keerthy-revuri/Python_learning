@@ -1,0 +1,12 @@
+Python -
+-----------
+-always set maximum value in any problem to max = float('-inf') instead of 0 as array may have -ve values also
+-and set minimum value to float(inf)
+-sum(arr[i:k)- gives sum of elements between i to k
+- Moving 0 to end using two pointers - i is used to traverse array, j is used to track index of non- zero elements
+if number is non - zero, swap both i, j elements
+
+- SQL -
+-------------
+- Self JOIN joins the table to itself and results in records which satisfies the condition
+-ex - use SELF JOIN where the same table has id , managerId

@@ -1,0 +1,13 @@
+- SQL -
+------------
+- To retrieve duplicate elements from SQL , we need to calculate count by grouping that element,
+then check against a condition if count(element)> 2
+
+- Python -
+-------------
+-enumerate(str) - this function is used to iterate over a list, tuple or string.
+both index , item can be accessed using this
+ex - for char, i in enumerate(str):
+
+- two pointer -
+-use 2 loops

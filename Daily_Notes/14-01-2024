@@ -1,0 +1,22 @@
+Python:
+------
+1. Bubble Sort -
+It works by comparing adjacent elements and swapping , in each iteration the largest element will be moved
+towards the end(sorted)
+This will be repeated till all the elements are sorted
+
+2. Selection Sort -
+This algorithm works by selecting smallest or largest element's index , and it  will be traversed
+through rest of the elements and compared with minimum element , if any element is smaller that index
+will be replaced with minimum element index
+After the loop swapping is done
+
+3. Length of last word -
+-This problem can be solved in 2 ways - using for loop and while loop
+- continue key word - the code written after continue is a loop will be skipped
+- continue, break will be written only inside loops
+- pass key word - it is a filler used when we dont know what to write in the code
+- for loop to traverse in reverse - for(len(str)-1, -1, -1) ----(-1 is written instead of 0 as second element in range is exclusive)
+-pattern learnt in while loop --- Length of last word ( make an assumption of counter=0 at the beginning of problem,
+and then increment the counter until the condition fails ex: while  s[len_s]!=' ')
+

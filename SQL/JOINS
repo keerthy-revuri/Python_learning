@@ -1,0 +1,43 @@
+JOINS
+
+--- AS - it allows us to create an alias for a column or result
+  ex - SELECT column as new_name from table;
+- alias name gets assigned at the very end of the query so it can't be used
+anywhere in the query like in WHERE, HAVING..etc..
+
+---JOIN ?
+- JOINS will allow us to combine information from multiple tables
+- The main reason for the different JOIN types is to decide how to deal with
+information only present in one of the tables
+
+---INNER JOIN -
+- It will result in set of records that match both tables
+ex - SELECT * FROM table_A INNER JOIN table_B ON table_A.col_match = table_B.col_match
+
+---FULL OUTER JOINS
+-They will allow us to specify how to deal with values only present in one of the
+tables being joined
+- it will result in set of all records present in both tables
+ex - SELECT * FROM table_A FULL OUTER JOIN table_B ON table_A.col_match = table_B.col_match
+-If the rows in the joined tables do not match, the result set of the full outer join contains NULL values
+ for every column of the table that lacks a matching row. For the matching rows, a single row
+ that has the columns populated from the joined table is included in the result set.
+- to retrieve unique values i.e., values which are not common in both tables, use WHERE clause
+ex- SELECT * FROM table_A FULL OUTER JOIN table_B ON table_A.col_match = table_B.col_match
+    WHERE tableA.id IS null OR tableB.id IS null
+
+---LEFT OUTER JOIN
+-It results in set of records that are in the left table, if there is no match with the
+right table, the results are null
+-syntax - SELECT * FROM table_A LEFT OUTER JOIN table_B
+          ON table_A.col_match = table_B.col_match
+- table order matters here
+- SELECT * FROM table_A LEFT OUTER JOIN table_B
+          ON table_A.col_match = table_B.col_match
+          WHERE table_B.id IS null
+
+--- UNION
+- It is used to combine result set of 2 SELECT statements
+
+
+

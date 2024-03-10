@@ -1,0 +1,11 @@
+Python -
+-------------
+-counter () method is used to combine values of 2 dictionaries
+ex - counter(d1) + counter(d2)
+
+- update() method is used to update the dictionary with elements from another dictionary,
+adding or modifying keys and values
+- if there are common keys, the values from dict2 overwrite values in dict1
+ex - d1.update(d2)
+
+-

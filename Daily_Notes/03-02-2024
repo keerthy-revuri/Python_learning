@@ -1,0 +1,6 @@
+- Python -
+- recursive function - calling the same function until it satisfies base function
+- isInstance(x, list) - checks if x is of type list
+- if type(x) is list - also checks if x is of list type
+- even though both evaluate same, isInstance() is more flexible to check type
+as it considers sub classes also (mainly useful in cases of polymorphism, inheritance)

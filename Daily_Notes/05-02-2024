@@ -1,0 +1,15 @@
+Python -
+
+-import string
+ alphabet_set = set(string.ascii_lowercase)
+ print(alphabet_set)
+- It gives set of 26 alphabets
+
+- frequency = [0 for i in range(26)] - list comprehension
+
+- the below approach removes any numbers or characters other than alphabets
+import re
+str = "The quick brown fox jumps over the lazy dog2"
+str = re.sub('[^a-z]','', str.lower())
+
+- ord() - returns ascii numbers of only alphabets
