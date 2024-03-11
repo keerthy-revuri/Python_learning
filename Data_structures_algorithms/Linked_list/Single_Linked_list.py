@@ -1,67 +1,77 @@
+#single linked list
+
 class Node:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, val = 0 , nxt = None):
+        self.val = val
         self.next = None
 class Linked_list:
     def __init__(self):
         self.head = None
-    def append(self, num):
-        new_node = Node(num)
-        if self.head is None:
-            self.head = new_node
-            return
-        last_node = self.head
-        while last_node.next:
-            last_node = last_node.next
-        last_node.next = new_node
 
-    def push(self,num):
-        new_node = Node(num)
+    def push(self,val):
+        new_node = Node(val)
         new_node.next = self.head
         self.head = new_node
 
-    def insertAfter(self,prev_node,num):
-        if prev_node is None:
-            print("The given prev_node must be in linked list ")
+    def append(self, val):
+        new_node = Node(val)
+        if self.head is None:
+            self.head = new_node
             return
-        new_Node = Node(num)
-        new_Node.next = prev_node.next
-        prev_node.next = new_Node
+        last = self.head
+        while last.next:
+            last = last.next
+        last.next = new_node
 
-    def delete_begining(self):
-        temp = self.head
-        self.head = self.head.next
-        temp = None
+    def insert_at_position(self,pos,val):
+        new_node = Node(val)
+        if pos == 0:
+            new_node.next = self.head
+            self.head = new_node
+            return
+        curr = self.head
+        for i in range(pos - 1):
+            curr = curr.next
+        new_node.next = curr.next
+        curr.next = new_node
 
-    def delete_end(self):
-        temp = self.head.next
-        prev = self.head
-        while temp.next:
-            temp = temp.next
-            prev = prev.next
-        prev.next = None
-
-    def delete_specified_pos(self,pos):
-        temp = self.head.next
-        prev = self.head
-        for i in range(1, pos-1):
-            temp = temp.next
-            prev = prev.next
-        prev.next = temp.next
-        temp.next = None
-    def printlist(self):
+    def print_list(self):
         a = self.head
         while a:
-            print(a.data)
+            print(a.val)
             a = a.next
 
+    def delete_at_begining(self):
+        self.head = self.head.next
+
+    def delete_at_end(self):
+        prev = self.head
+        curr = self.head.next
+        while curr.next:
+            prev = prev.next
+            curr = curr.next
+        prev.next = None
+
+    def delete_at_position(self, pos):
+        prev = self.head
+        curr = self.head.next
+        for i in range(pos - 1):
+            prev = prev.next
+            curr = curr.next
+        prev.next = curr.next
+
 llist = Linked_list()
-llist.append(6)
-llist.push(7)
+llist.push(2)
 llist.push(1)
+llist.append(3)
 llist.append(4)
-llist.insertAfter(llist.head.next, 8)
-llist.delete_begining()
-llist.delete_end()
-llist.delete_specified_pos(2)
-llist.printlist()
+llist.append(5)
+llist.insert_at_position(2, 6)
+llist.print_list()
+llist.delete_at_begining()
+llist.delete_at_end()
+llist.delete_at_position(2)
+print("after deletion")
+llist.print_list()
+
+
