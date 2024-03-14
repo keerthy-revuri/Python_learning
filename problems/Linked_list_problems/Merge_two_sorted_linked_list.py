@@ -1,3 +1,6 @@
+# Approach -
+# - solve using  merge sort algorithm
+
 class Node:
     def __init__(self, data = 0, nxt = None):
         self.data = data

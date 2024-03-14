@@ -1,0 +1,18 @@
+SQL -
+-----------
+ISLAND PATTERN problems - problems where columns have multiple continuos sequences
+- find groups and apply asked logic like finding minimum and maximum in that groups
+
+Python -
+------------
+- Detect cycle in linked list - use slow, fast pointers
+
+- Remove nth node from end in linked list -
+* check position of nth node from begining - len(linked list) - n
+* create dummy node as prev
+* run loop it it reaches that node and change links
+
+- Merge 2 sorted lists
+
+- Remove duplicates from sorted list - check if curr.data == curr.next.data ,
+if yes then map curr.next to curr.next.next
