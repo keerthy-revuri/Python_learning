@@ -1,4 +1,10 @@
+# Approach -
+# -========
+# - use slow pointer, fast pointer - check if both meets, if meets then list has  a cycle else does not
+# - use an array and add addresses of nodes to it and check if any of address repeats , if yes then it has cycle else not
 # Detect a cycle in linked list
+
+
 
 class Node:
     def __init__(self, data = 0, nxt = None):

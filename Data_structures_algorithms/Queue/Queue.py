@@ -27,7 +27,7 @@ print(f"first popped element is - {queue.pop()}")
 from collections import deque
 class Queue:
     def __init__(self):
-        self.buffer = deque()
+        self.buffer = deque() # ctrl + B - to view methods in deque class (appendLeft is a method , buffer is a obeject here)
     def enqueue(self, val):
         self.buffer.appendleft('apple')
         self.buffer.appendleft("banana")

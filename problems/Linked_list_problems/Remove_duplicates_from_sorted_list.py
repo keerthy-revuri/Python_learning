@@ -1,3 +1,7 @@
+# Approach -
+# - In a while loop check if curr. data == curr.next.data ,
+# if yes then link curr.next and curr.next.next which eliminates duplicates
+
 class Node:
     def __init__(self, data):
         self.data = data

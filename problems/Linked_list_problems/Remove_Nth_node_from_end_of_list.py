@@ -1,3 +1,8 @@
+# Approach -
+# - calculate the position of given nth node from begining and run the loop till curr pointer reaches it
+# - create a dummy node as prev
+# - link next of prev to next of curr which removes curr node
+
 class Node:
     def __init__(self, data = 0, nxt = None):
         self.data = data
